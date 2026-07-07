@@ -1,4 +1,4 @@
-CREATE OR REFRESH STREAMING TABLE workspace.silver.orders
+CREATE OR REFRESH STREAMING TABLE workspace.silver.orders_silver
 (
   CONSTRAINT orderunits_valido
     EXPECT (orderunits >= 0)
@@ -11,7 +11,7 @@ CREATE OR REFRESH STREAMING TABLE workspace.silver.orders
 
 COMMENT "Silver Orders: Dados validados com CDC (SCD Type 1) e colunas técnicas";
 
-APPLY CHANGES INTO silver_orders
+APPLY CHANGES INTO workspace.silver.orders_silver
 
 FROM
 (
@@ -29,7 +29,7 @@ FROM
         -- Coluna técnica da Silver
         current_timestamp() AS silver_processing_timestamp
 
-    FROM STREAM(bronze_orders)
+    FROM STREAM workspace.bronze.orders_bronze
 
 )
 

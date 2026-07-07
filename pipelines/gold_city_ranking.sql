@@ -9,7 +9,7 @@ SELECT
     COUNT(*) AS total_orders,
     SUM(orderunits) AS total_units,
     ROUND(AVG(orderunits), 0) AS avg_units
-FROM silver_orders
+FROM workspace.silver.orders_silver
 GROUP BY 
     state,
     city,

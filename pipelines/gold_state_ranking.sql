@@ -11,7 +11,7 @@ SELECT
 
     ROUND(AVG(orderunits), 0) AS avg_units
 
-FROM silver_orders
+FROM workspace.silver.orders_silver
 
 GROUP BY state
 

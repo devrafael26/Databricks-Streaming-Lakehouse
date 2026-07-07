@@ -15,7 +15,7 @@ SELECT
 
     MAX(orderunits) AS max_units
 
-FROM silver_orders
+FROM workspace.silver.orders_silver
 
 GROUP BY
     window(orderdate, '1 minute');

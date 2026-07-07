@@ -1,4 +1,4 @@
-CREATE OR REFRESH STREAMING TABLE workspace.bronze.orders
+CREATE OR REFRESH STREAMING TABLE workspace.bronze.orders_bronze
 COMMENT "Tabela Silver: Estrutura relacional limpa e tipada"
 AS 
 SELECT 
