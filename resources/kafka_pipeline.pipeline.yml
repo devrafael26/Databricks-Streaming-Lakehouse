@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    kafka_pipeline:
+      name: Kafka-Databricks
+      libraries:
+        - glob:
+            include: ../src/pipelines/**
+      catalog: workspace
+      channel: CURRENT
+      continuous: false
+      photon: true
+      root_path: ../src
+      schema: default
+      serverless: true
