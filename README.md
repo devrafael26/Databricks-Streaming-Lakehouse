@@ -343,11 +343,11 @@ Responsável por publicar a aplicação no ambiente Databricks.
 
 🚀 Próximos Passos
 
-* Implementação da camada Gold;
-* Criação de métricas analíticas;
-* Monitoramento da qualidade;
-* Deploy em múltiplos ambientes;
-* Integração com ferramentas de observabilidade.
+- Evolução das métricas analíticas da camada Gold;
+- Expansão dos testes de qualidade para regras de negócio;
+- Implementação de dashboards de monitoramento e observabilidade;
+- Configuração de múltiplos ambientes utilizando Databricks Asset Bundles;
+- Integração com ferramentas de visualização e monitoramento.
 
 
 
