@@ -1,5 +1,6 @@
 # StreamLake Platform
 
+
 ## Plataforma de dados streaming com Kafka + Databricks + Delta Lake.
 
 Plataforma de Dados Streaming com Apache Kafka + Databricks + Delta Lake
