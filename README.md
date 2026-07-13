@@ -219,7 +219,20 @@ state
 total_orders
 total_units
 avg_units
+Permite identificar a distribuição dos pedidos e volume processado por região.
 
+Observabilidade do Pipeline
+
+Foi criada uma tabela para acompanhamento operacional do processamento:
+
+▦ gold_pipeline_observability
+
+Monitoramento de informações técnicas:
+
+Timestamp de processamento Bronze;
+Timestamp de processamento Silver;
+Latência entre etapas;
+Acompanhamento da execução do pipeline.
 
 Data Quality
 
@@ -257,20 +270,6 @@ Integridade das agregações por cidade e estado.
 
 Resultado:
 A camada Gold disponibiliza dados preparados para consumo analítico, garantindo confiabilidade através de métricas de negócio e testes automatizados de qualidade.
-
-
-Observabilidade do Pipeline
-
-Foi criada uma tabela para acompanhamento operacional do processamento:
-
-▦ gold_pipeline_observability
-
-Monitoramento de informações técnicas:
-
-Timestamp de processamento Bronze;
-Timestamp de processamento Silver;
-Latência entre etapas;
-Acompanhamento da execução do pipeline.
 
 ⸻
 
