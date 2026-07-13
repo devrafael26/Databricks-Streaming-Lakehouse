@@ -229,10 +229,11 @@ Foi criada uma tabela para acompanhamento operacional do processamento:
 
 Monitoramento de informações técnicas:
 
-Timestamp de processamento Bronze;
-Timestamp de processamento Silver;
-Latência entre etapas;
-Acompanhamento da execução do pipeline.
+- Eventos processados por janela de tempo;
+- Latência média entre Bronze e Silver;
+- Latência máxima entre Bronze e Silver;
+- Latência mínima entre Bronze e Silver;
+- Evolução da latência ao longo do processamento.
 
 Data Quality
 
@@ -269,7 +270,7 @@ Métricas agregadas devem possuir valores válidos;
 Integridade das agregações por cidade e estado.
 
 Resultado:
-A camada Gold disponibiliza dados preparados para consumo analítico, garantindo confiabilidade através de métricas de negócio e testes automatizados de qualidade.
+A camada Gold disponibiliza dados preparados para consumo analítico e acompanhamento operacional, garantindo confiabilidade através de métricas de negócio, indicadores de processamento e testes automatizados de qualidade.
 
 ⸻
 
