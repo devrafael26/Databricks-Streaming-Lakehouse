@@ -12,8 +12,7 @@ e automação CI/CD.
 
 O StreamLake Platform simula uma plataforma de processamento de pedidos em tempo real.
 
-Eventos de pedidos são publicados em um tópico Kafka, consumidos pelo Databricks e
-processados através de uma arquitetura em camadas:
+Os eventos de pedidos são publicados em um tópico Kafka, consumidos pelo Databricks e processados através de uma arquitetura em camadas utilizando o Lakeflow Declarative Pipelines (DLT):
 
 - Bronze: ingestão e persistência dos eventos brutos;
 - Silver: dados tratados, tipados e enriquecidos;
