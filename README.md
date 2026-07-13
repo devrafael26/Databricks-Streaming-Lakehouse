@@ -389,12 +389,13 @@ Responsável por publicar a aplicação no ambiente Databricks.
 │       ├── gold_orders_metrics.sql
 │       ├── gold_city_ranking.sql
 │       ├── gold_state_ranking.sql
-│       └──gold_pipeline_observability.sql
+│       └── gold_pipeline_observability.sql
 │
 ├── tests
 │   ├── schemas
+│   │   ├── order_event_schema.json
 │   │   ├── bronze_schema.json
-│   │   └── order_event_schema.json
+│   │   └── silver_orders_schema.json
 │   │
 │   ├── test_order_event_contract.py
 │   ├── test_bronze_schema.py
