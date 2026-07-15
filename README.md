@@ -31,20 +31,20 @@ com foco em streaming, governança, qualidade e automação.
 
 ## ✨ Principais Funcionalidades
 
-- ✔ Ingestão de eventos em streaming utilizando Apache Kafka
-- ✔ Processamento distribuído com Spark Structured Streaming
-- ✔ Arquitetura Lakehouse (Raw, Bronze, Silver e Gold)
-- ✔ Lakeflow Declarative Pipelines (Delta Live Tables)
-- ✔ Schema Enforcement
-- ✔ Contratos de Dados com JSON Schema
-- ✔ CDC utilizando APPLY CHANGES INTO (SCD Type 1)
-- ✔ Data Quality com Expectations
-- ✔ Testes automatizados utilizando Pytest
-- ✔ CI/CD utilizando GitHub Actions
-- ✔ Deploy automatizado utilizando Databricks Asset Bundles
-- ✔ Orquestração utilizando Databricks Workflows
-- ✔ Dashboards analíticos e de observabilidade
-- ✔ Pipeline Observability
+-  Ingestão de eventos em streaming utilizando Apache Kafka
+-  Processamento distribuído com Spark Structured Streaming
+-  Arquitetura Lakehouse (Raw, Bronze, Silver e Gold)
+-  Lakeflow Declarative Pipelines (Delta Live Tables)
+-  Schema Enforcement
+-  Contratos de Dados com JSON Schema
+-  CDC utilizando APPLY CHANGES INTO (SCD Type 1)
+-  Data Quality com Expectations
+-  Testes automatizados utilizando Pytest
+-  CI/CD utilizando GitHub Actions
+-  Deploy automatizado utilizando Databricks Asset Bundles
+-  Orquestração utilizando Databricks Workflows
+-  Dashboards analíticos e de observabilidade
+-  Pipeline Observability
 
 ---
 
@@ -201,13 +201,17 @@ COUNT(orderid) AS total_orders,
 SUM(orderunits) AS total_units,
 AVG(orderunits) AS avg_units_per_order
 
-Indicadores gerados:
+Métricas e indicadores disponibilizados:
 
-Quantidade total de pedidos;
-Volume total de itens processados;
-Média de unidades por pedido;
-Valores mínimo e máximo de unidades;
-Distribuição dos pedidos por localização.
+- Quantidade total de pedidos;
+- Volume total de unidades processadas;
+- Média, mínimo e máximo de unidades por pedido;
+- Ranking de pedidos por cidade;
+- Ranking de pedidos por estado;
+- Eventos processados por janela de tempo;
+- Latência média entre Bronze e Silver;
+- Latência mínima entre Bronze e Silver;
+- Latência máxima entre Bronze e Silver.
 
 Tabelas analíticas criadas:
 
