@@ -1,4 +1,4 @@
-# StreamLake Platform
+StreamLake Platform
 
 **Apache Kafka \| Databricks \| Spark \| Delta Lake \| GitHub Actions \|
 Python \| Pytest**
@@ -31,7 +31,7 @@ Lakehouse composta pelas camadas:
 O projeto foi desenvolvido para demonstrar uma implementação moderna de
 Engenharia de Dados utilizando recursos do ecossistema Databricks.
 
-# 🏗️ Arquitetura
+🏗️ Arquitetura
 
 ``` text
                 Apache Kafka
@@ -158,7 +158,7 @@ EXPECT(orderunits >= 0)
 ON VIOLATION DROP ROW
 ```
 
-Validações:
+Validações implementadas:
 
 -   Quantidades negativas;
 -   Campos obrigatórios;
@@ -328,6 +328,10 @@ Databricks Bundle Deploy
 ├── tests
 │   ├── fixtures
 │   ├── schemas
+│   │   ├── order_event_schema.json
+│   │   ├── bronze_orders_schema.json
+│   │   └── silver_orders_schema.json
+│   │
 │   ├── test_order_event_contract.py
 │   ├── test_bronze_schema.py
 │   ├── test_silver_schema.py

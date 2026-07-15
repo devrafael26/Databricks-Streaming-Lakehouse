@@ -1,0 +1,18 @@
+[
+  {
+    "state": "State_13",
+    "city": "City_39",
+    "order_day": "2017-12-27",
+    "total_orders": 10,
+    "total_units": 50,
+    "avg_units": 5
+  },
+  {
+    "state": "State_5",
+    "city": "City_10",
+    "order_day": "2017-12-28",
+    "total_orders": 5,
+    "total_units": 20,
+    "avg_units": 4
+  }
+]

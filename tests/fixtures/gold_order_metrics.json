@@ -1,0 +1,24 @@
+[
+  {
+    "time_window": {
+      "start": "2017-11-18T06:34:00.000Z",
+      "end": "2017-11-18T06:35:00.000Z"
+    },
+    "total_orders": 1,
+    "total_units": 1,
+    "avg_units_per_order": 1,
+    "min_units": 1,
+    "max_units": 1
+  },
+  {
+    "time_window": {
+      "start": "2017-12-16T06:29:00.000Z",
+      "end": "2017-12-16T06:30:00.000Z"
+    },
+    "total_orders": 2,
+    "total_units": 6,
+    "avg_units_per_order": 3,
+    "min_units": 2,
+    "max_units": 4
+  }
+]

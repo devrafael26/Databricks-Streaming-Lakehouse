@@ -22,6 +22,8 @@ SELECT
         unix_timestamp(bronze_processing_timestamp)
     ) AS min_bronze_silver_latency_sec
 
+    
+
 FROM workspace.silver.orders_silver
 
 GROUP BY
