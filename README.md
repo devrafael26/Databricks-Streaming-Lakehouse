@@ -1,5 +1,7 @@
 StreamLake Platform
 
+Apache Kafka | Databricks | Spark | Delta Lake | GitHub Actions | Python | Pytest
+
 Plataforma de Dados Streaming utilizando Apache Kafka, Databricks, Spark Structured Streaming, Delta Lake e Lakeflow Declarative Pipelines.
 
 Projeto de Engenharia de Dados end-to-end para processamento de eventos em tempo real, implementando uma arquitetura Lakehouse com foco em Streaming, Qualidade de Dados, CDC, Observabilidade e CI/CD.
@@ -292,8 +294,9 @@ Databricks Bundle Deploy
 
 Responsável por publicar a aplicação no ambiente Databricks.
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
+```text
 .
 ├── .github
 │   └── workflows
@@ -306,7 +309,7 @@ Responsável por publicar a aplicação no ambiente Databricks.
 │
 ├── src
 │   ├── notebooks
-│   │   └── ingest_kafka.ipynb
+│   │   └── ingest_kafka.py
 │   │
 │   └── pipelines
 │       ├── bronze_orders.sql
@@ -318,7 +321,13 @@ Responsável por publicar a aplicação no ambiente Databricks.
 │
 ├── tests
 │   ├── fixtures
+│   │   └── order_event.json
+│   │
 │   ├── schemas
+│   │   ├── order_event_schema.json
+│   │   ├── bronze_orders_schema.json
+│   │   └── silver_orders_schema.json
+│   │
 │   ├── test_order_event_contract.py
 │   ├── test_bronze_schema.py
 │   ├── test_silver_schema.py
@@ -326,6 +335,7 @@ Responsável por publicar a aplicação no ambiente Databricks.
 │
 ├── databricks.yml
 └── README.md
+```
 
 
 🚀 Resultados
