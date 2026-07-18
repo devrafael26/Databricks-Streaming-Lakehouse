@@ -346,7 +346,7 @@ Databricks Bundle Deploy
 └── README.md
 ```
 
-# 🚀 Resultados
+# 📌 Recursos Implementados
 
 -   Ingestão de eventos em streaming com Apache Kafka.
 -   Processamento distribuído com Spark Structured Streaming.
