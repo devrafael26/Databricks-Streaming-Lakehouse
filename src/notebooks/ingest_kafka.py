@@ -72,7 +72,7 @@ df = (
           "checkpointLocation",
           checkpoint_path
       )
-      .trigger(once=True)
+      .trigger(availableNow=True)
       .outputMode("append")
       .table("raw_orders")
 )
